@@ -1,0 +1,36 @@
+package com.example.Instagram.entity;
+
+
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.time.LocalDateTime;
+import java.util.Set;
+import java.util.UUID;
+
+@Entity
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+
+@Table(name = "posts")
+public class PostEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id ;
+
+    @Column(nullable = false , length = 100)
+    private String caption ;
+
+    @Column(nullable = false)
+    private String image_url ;
+
+    @Column(nullable = false)
+    private LocalDateTime createdAt = LocalDateTime.now();
+
+    @OneToMany(mappedBy = "post", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Set<LikesEntity> likes;
+
+}
