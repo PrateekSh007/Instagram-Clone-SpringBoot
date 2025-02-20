@@ -9,13 +9,16 @@ A social media API inspired by Instagram, developed using Spring Boot and SQL. T
 - **Like/Unlike**: Users can like or unlike posts, with like counts updated in real-time.
 - **JWT Authentication**: Secure user authentication using JSON Web Tokens (JWT).
 - **SQL Mapping**: Handles complex mappings and relationships between users, posts, follows, and likes.
-  
+- **Frontend**: Angular frontend (coming soon).
+
 ## Technologies Used
 
 - **Backend**: Spring Boot
-- **Database**: MySQL 
+- **Database**: MySQL or PostgreSQL (based on your preference)
 - **Authentication**: JWT (JSON Web Tokens)
 - **ORM**: JPA (Java Persistence API)
+- **Frontend**: Angular (coming soon)
+- **Build Tool**: Gradle
 
 ## Installation
 
@@ -24,4 +27,4 @@ To run this project locally:
 ### Prerequisites
 - Java 17 (or compatible version)
 - MySQL/PostgreSQL Database
-- Maven for dependency management
+- Gradle for dependency management
