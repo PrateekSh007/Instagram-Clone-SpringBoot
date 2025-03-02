@@ -10,7 +10,7 @@ A social media API inspired by Instagram, developed using Spring Boot and SQL. T
 - **JWT Authentication**: Secure user authentication using JSON Web Tokens (JWT).
 - **SQL Mapping**: Handles complex mappings and relationships between users, posts, follows, and likes.
 - **Frontend**: Angular frontend (coming soon).
-
+- **Story Functionality: Users can create, view, and delete stories. Stories are temporary(future scope) and can include images or videos.
 ## Technologies Used
 
 - **Backend**: Spring Boot
